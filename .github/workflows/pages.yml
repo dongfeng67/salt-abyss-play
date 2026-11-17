@@ -20,8 +20,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Assemble and verify game pack
         run: |
-          cat pack/index.pck.* > site/index.pck
-          echo '527816d75e7fbd8eb28b5ba1901d7582a6b178b9e9ebace7399e87cc1ddff15a  site/index.pck' | sha256sum --check
+          cat pack/game-038-fix1.pck.* > site/game-038-fix1.pck
+          echo '1fd5c0a862e192199e1adb124dec25ea006abac593e00861394876e9fecc16ed  site/game-038-fix1.pck' | sha256sum --check
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
